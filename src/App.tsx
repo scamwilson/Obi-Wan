@@ -12,6 +12,7 @@ import SpaceJesus from "./components/pictures/spacejesus";
 import Logo from "./logo.svg";
 import { lightBlue } from "@material-ui/core/colors";
 import { ReactComponent as SpaceJesus3 } from "./Kenobi.svg";
+import Grid from "@material-ui/core/Grid";
 
 const tinycolor = require("tinycolor2");
 
@@ -102,12 +103,47 @@ function App() {
           onChange={changeColour}
         />
       </form>
-      <SpaceJesus fill={colourMatrix[0]} />
-      <SpaceJesus fill={colourMatrix[1]} />
-      <SpaceJesus fill={colourMatrix[2]} />
-      <SpaceJesus fill={colourMatrix[3]} />
-      <SpaceJesus fill={colourMatrix[4]} />
-      <SpaceJesus fill={colourMatrix[5]} />
+      <Typography className={classesCard.root}>
+        Komplementary Kenobi:
+      </Typography>
+      <Grid container spacing={3}>
+        <Grid item xs={2}>
+          <SpaceJesus fill={colourMatrix[0]} />
+          <Typography className={classesCard.root}>
+            {colourMatrix[0]}
+          </Typography>
+        </Grid>
+        <Grid item xs={2}>
+          <SpaceJesus fill={colourMatrix[1]} />
+          <Typography className={classesCard.root}>
+            {colourMatrix[1]}
+          </Typography>
+        </Grid>
+        <Grid item xs={2}>
+          <SpaceJesus fill={colourMatrix[2]} />
+          <Typography className={classesCard.root}>
+            {colourMatrix[2]}
+          </Typography>
+        </Grid>
+        <Grid item xs={2}>
+          <SpaceJesus fill={colourMatrix[3]} />
+          <Typography className={classesCard.root}>
+            {colourMatrix[3]}
+          </Typography>
+        </Grid>
+        <Grid item xs={2}>
+          <SpaceJesus fill={colourMatrix[4]} />
+          <Typography className={classesCard.root}>
+            {colourMatrix[4]}
+          </Typography>
+        </Grid>
+        <Grid item xs={2}>
+          <SpaceJesus fill={colourMatrix[5]} />
+          <Typography className={classesCard.root}>
+            {colourMatrix[5]}
+          </Typography>
+        </Grid>
+      </Grid>
     </React.Fragment>
   );
 }

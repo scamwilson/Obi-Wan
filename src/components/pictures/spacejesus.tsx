@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 function SpaceJesus(props: any) {
   const useStyles = makeStyles({
     kenobi: {
-      width: "15.7%",
       justifyContent: "center",
       alignItems: "center",
       textAlign: "center",
@@ -403,7 +402,6 @@ l-35 3 1 65 1 64 -29 -34 c-16 -19 -52 -80 -79 -135 l-51 -100 46 -13 c40 -11
           />
         </g>
       </svg>
-      <Typography className={classes.kenobi}>{props.fill}</Typography>
     </React.Fragment>
   );
 }
